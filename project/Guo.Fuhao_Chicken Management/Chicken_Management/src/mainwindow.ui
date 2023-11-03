@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>966</width>
+    <height>386</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="lbname">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>80</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Fuhao Guo</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbpic">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>110</y>
+      <width>301</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource.qrc">:/img/image/chicken1.jpg</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbtitle">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>60</y>
+      <width>211</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Chicken Management V1.0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>50</y>
+      <width>471</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Suchen</string>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>40</y>
+       <width>405</width>
+       <height>135</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QRadioButton" name="rbRooster">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Hahn</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="cboRooster">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>150</width>
+            <height>22</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>22</height>
+           </size>
+          </property>
+          <item>
+           <property name="text">
+            <string>ID</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Name</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Breed</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>HatchingDate</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>TrunkSize</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>FeatherColor</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>CombColor</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Weight</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Comatibility</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>FertilizationRate</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="letRooster">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QRadioButton" name="rbHen">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Henne</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="cboHen">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>150</width>
+            <height>22</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>22</height>
+           </size>
+          </property>
+          <item>
+           <property name="text">
+            <string>ID</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Name</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Breed</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>HatchingDate</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>EggColor</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>AverageEggWeight</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>TrunkSize</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>FeatherColor</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>CombColor</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Weight</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Compatibility</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="leHen">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QRadioButton" name="rbEgg">
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Ei</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="cboEgg">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>150</width>
+            <height>22</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>22</height>
+           </size>
+          </property>
+          <item>
+           <property name="text">
+            <string>ID</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>HenID</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>RoosterID</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>DataLaid</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Weight</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>CoopNumber</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Fertilized</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="letEgg">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="btnSearch">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>180</y>
+       <width>75</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Suchen</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>30</y>
+      <width>371</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="sortingEnabled">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>280</y>
+      <width>471</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QPushButton" name="btncfgRooster">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Config Hahn</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btncfgHen">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Config Henne</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btncfgEgg">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>100</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Config Ei</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnClose">
+       <property name="text">
+        <string>Schließen</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>966</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuH_hner_verwaltung">
+    <property name="title">
+     <string>Hühner&amp;verwaltung</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_Legeleistung">
+    <property name="title">
+     <string>&amp;Legeleistung</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_F_tterung">
+    <property name="title">
+     <string>&amp;Fütterung</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_Zucht">
+    <property name="title">
+     <string>&amp;Zucht</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_Krankenheit">
+    <property name="title">
+     <string>&amp;Krankenheit</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_Medikamentengabe">
+    <property name="title">
+     <string>&amp;Medikamentengabe</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_Pflege">
+    <property name="title">
+     <string>&amp;Pflege</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_Extras">
+    <property name="title">
+     <string>&amp;Extras</string>
+    </property>
+    <addaction name="action_Sprache"/>
+   </widget>
+   <addaction name="menuH_hner_verwaltung"/>
+   <addaction name="menu_Legeleistung"/>
+   <addaction name="menu_F_tterung"/>
+   <addaction name="menu_Zucht"/>
+   <addaction name="menu_Krankenheit"/>
+   <addaction name="menu_Medikamentengabe"/>
+   <addaction name="menu_Pflege"/>
+   <addaction name="menu_Extras"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_Sprache">
+   <property name="text">
+    <string>&amp;Sprache</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>btnClose</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>520</x>
+     <y>509</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>617</x>
+     <y>537</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
